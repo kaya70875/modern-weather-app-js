@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #103E41;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.all{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -10px;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.all.hidden{
+    display: none;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 700px;
+
+    border-radius: 30px;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 3px solid;
+    border-color: #5C4CC0;
+    margin: 60px;
+    border-radius: 20px;
+    max-height: 50px;
+    padding: 20px;
+    width: 300px;
+}
+
+input{
+    border : none;
+    outline: none;
+    font-size: 20px;
+}
+
+.input-container img{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+
+    margin-left: 220px;
+    cursor: pointer;
+}
+
+.location-section{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+}
+
+.location-section header{
+    position: relative;
+    font-size : 42px;
+    text-align: center;
+    color : #5C4CC0;
+    font-weight: 500;
+    padding-left: 25px;
+    margin-top: -4px;
+}
+
+.location-section img{
+    width: 38px;
+    height: 48px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top : 260px;
+    
+}
+
+.content header{
+    font-size: 64px;
+    color : #103E41;
+    font-weight: 600;
+}
+
+.content-info{
+    position: relative;
+    text-align: center;
+    margin-top:24px;
+}
+
+.content-info p{
+    color : #FF2272;
+    font-size: 24px;
+    text-align: center;
+}
+
+.content img{
+    width: 128px;
+    height: 128px;
+}
+
+.footer{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 600px;
+    min-width: 400px;
+}
+
+.left-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.left-info p{
+    position: relative;
+    text-align: center;
+}
+
+.left-info header{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.right-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.right-info header{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.right-info p{
+    position: relative;
+    text-align: center;
+}

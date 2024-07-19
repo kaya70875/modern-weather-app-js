@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Modern Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="all hidden">
+            <div class="input-container">
+                <input type="text" id="input-zone">
+                <img src="img/search.png" onclick="getData()" id="btnSearch">
+            </div>
+    
+            <div class="location-section">
+                <img src="img/location.png">
+                <header id="country-name">France</header>
+            </div>
+    
+            <div class="content">
+                <img src="img/sun.png" id="weather-img">
+                <div class="content-info">
+                    <header id="header-celcius">24 C</header>
+                    <p id="header-info">Broken Clouds</p>
+                </div>
+            </div>
+    
+            <div class="footer">
+                <div class="left-side" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="img/thermo.png" style="width: 12px; height: 24px;">
+                    <div class="left-info">
+                        <header>Feels Like</header>
+                        <p id="feels-like">27 C</p>
+                    </div>
+                </div>
+                <div class="right-side" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="img/wind.png" style="width: 24px; height: 24px;">
+                    <div class="right-info">
+                        <header id="wind-speed">0 Km/H</header>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="fetchWeatherData.js"></script>
+</body>
+</html>
