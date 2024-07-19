@@ -11,7 +11,7 @@ const weatherImg = document.getElementById('weather-img');
 
 async function fetchWeather(defaultValue){
 
-    const apiKey = 'c7844e4469c03a7e9f23e7a2b4c71954';
+    const apiKey = 'c7844e4469c03a7e9f23e7a2b4c71954'; //example free api works fine but you can change if you want.
     const cityName = defaultValue || input.value;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`;
 
